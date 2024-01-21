@@ -1,0 +1,128 @@
+/* Add this to your existing styles or create a new CSS file */
+
+/* Navigation styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-item {
+  margin: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style-type: none;
+}
+
+.dropdown-content ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.dropdown-content ul li {
+  padding: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.flex-container {
+  display: flex;
+}
+
+
+/* Hero image styles */
+.picture-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; /* Align to the top */
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 20px; /* Adjusted margin for spacing */
+}
+
+picture {
+  width: 100%;
+}
+
+.picture-container picture {
+  width: 50%;
+}
+
+.picture-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px; /* Set a specific max-height */
+}
+
+.content-container {
+  width: 50%; /* Adjust width as needed */
+  padding: 2rem; /* Add padding for better spacing */
+}
+
+p,
+div.attribution {
+  margin: 0;
+}
+
+.attribution img {
+  margin-right: 8px;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: 100%;
+    margin-top: 0; /* Adjusted for small screens */
+    margin-left: 0; /* Adjusted for small screens */
+  }
+}
+
+/* Added styles for the Snap item */
+.nav-list:first-child {
+  margin-right: auto; /* Push Snap to the left */
+}
+
+.learn-more {
+  border: 2px solid black;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Border radius to make edges circular */
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(207, 33%, 15%); /* Dark gray text color */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
