@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item" style="font-size: 30px;">snap</li>
+      <li class="nav-item">Features
+        <div class="dropdown">
+          <img src="./images/icon-arrow-down.svg" alt="Dropdown Arrow" />
+          <ul class="dropdown-content">
+            <!-- Dropdown content for Features -->
+            <li>
+              <img src="./images/icon-todo.svg" alt="ToDo List" />
+              Todo list
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="Calendar" />
+              Calendar
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="Reminders" />
+              Reminders
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" alt="Planning" />
+              Planning
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">Company
+        <div class="dropdown">
+          <img src="./images/icon-arrow-down.svg" alt="Dropdown Arrow" />
+          <ul class="dropdown-content">
+            <!-- Dropdown content for Company -->
+            <li>
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">Careers</li>
+      <li class="nav-item">About</li>
+    </ul>
+
+    <ul class="nav-list">
+      <li class="nav-item">Login</li>
+      <li class="nav-item"><button class="learn-more">Register</button></li>
+    </ul>
+  </div>
+  <div class="flex-container">
+    <div class="content-container">
+      <!-- Your text content here -->
+      <br><br>
+      <p style="font-size: 80px;"><b>Make remote work</b></p>
+      <br><br><br>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+        productivity soar.</p>
+      <br><br><br>
+      <p class="learn-more">Learn more</p>
+      <br><br><br><br><br>
+      <div class="attribution">
+        <img src="./images/client-databiz.svg" alt="client-databiz" />
+        <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+        <img src="./images/client-meet.svg" alt="client-meet" />
+        <img src="./images/client-maker.svg" alt="client-maker" />
+      </div>
+    </div>
+
+    <div class="picture-container">
+      <picture>
+        <!-- Use image-hero-mobile.png for screens up to 768px wide -->
+        <source media="(max-width: 768px)" srcset="./images/image-hero-mobile.png">
+        <!-- Use image-hero-desktop.png for screens wider than 768px -->
+        <img src="./images/image-hero-desktop.png" alt="Hero Image">
+      </picture>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Subhashree</a>.
+  </div>
+</body>
+
+</html>
